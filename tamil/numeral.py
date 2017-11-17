@@ -123,9 +123,9 @@ def num2tamilstr( *args ):
                     return teens[teen_number-1] +u' ' + num2tamilstr(residue_number,filenames)
                 else:
                     return teens[teen_number-1]
-            if residue_number < 1.0:
+            """if residue_number < 1.0:
                 filenames.append( "tens_%d"%(quotient_number-1) )
-                numeral = tens[quotient_number-1]
+                numeral = tens[quotient_number-1]"""
             else:
                 filenames.append( "tens_suffix_%d"%(quotient_number-2) )
                 numeral = tens_suffix[quotient_number-2]
